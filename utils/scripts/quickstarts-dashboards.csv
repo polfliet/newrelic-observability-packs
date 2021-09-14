@@ -1,0 +1,373 @@
+PATH,NAME,INSTALL_PLAN,DASHBOARD_COPY
+/Algorithmia,Algorithmia,,
+/Ansible,Ansible,,
+/Apache,Apache,apache,
+/Apache-Zookeeper,Apache Zookeeper,zookeeper,
+/Blameless,Blameless,,
+/Browser,Browser,browser,
+/C,C,c,
+/Cassandra,Cassandra,cassandra,
+/CentOS,CentOS,os,
+/Chef,Chef,,
+/CloudFoundry,CloudFoundry,,
+/Collectd,Collectd,,
+/Consul,Consul,,
+/Cordova,Cordova,,
+/Couchbase,Couchbase,couchbase,
+/Cplusplus,C++,c++,
+/Datastax-Cassandra,Datastax Cassandra,cassandra,
+/Debian,Debian,os,
+/Docker,Docker,docker,
+/Dropwizard,Dropwizard,,
+/Dropwizard-Metrics-Reporter,Dropwizard Metrics Reporter,,
+/Elasticsearch,Elasticsearch,elasticsearch,
+/F5,F5,f5,
+/Fluent-Bit-plugin-for-Logs,Fluent Bit plugin for Logs,,
+/Fluentd-plugin-for-Logs,Fluentd plugin for Logs,,
+/Full-Story,Full Story,,
+/Haproxy,Haproxy,haproxy,
+/Informix,Informix,,
+/Istio,Istio,,
+/Kamon,Kamon,,
+/Lacework,Lacework,,
+/LaunchDarkly,LaunchDarkly,,
+/Lighthouse,Lighthouse,,
+/Linux,Linux,os,
+/Logstash-plugin-for-Logs,Logstash plugin for Logs,logstash,
+/MariaDB,MariaDB,mariadb,
+/Memcached,Memcached,memcached,
+/Micrometer,Micrometer,micrometer,
+/MongoDB,MongoDB,mongodb,
+/MSSQL,MSSQL,mssql,
+/MySQL,MySQL,mysql,
+/Nagios,Nagios,nagios,
+/New-Relic-Micrometer-Registry,New Relic Micrometer Registry,,
+/NFS,NFS,,
+/NGINX,NGINX,nginx,
+/OKHTTP,OKHTTP,,
+/OpenCensus,OpenCensus,,
+/OpenTelemetry,OpenTelemetry,,
+/PerfMon,PerfMon,windows,
+/Pivotal-Tracker,Pivotal Tracker,,
+/Port-monitoring,Port monitoring,,
+/Postgresql,Postgres,postgres,
+/Prometheus,Prometheus,prometheus,
+/Puppet,Puppet,,
+/Quantum-Metric,Quantum Metric,,
+/RabbitMQ,RabbitMQ,rabbitmq,
+/Redis,Redis,redis,
+/Roku,Roku,,
+/SIGNL4,SIGNL4,,
+/Slack,Slack,,
+/SNMP,SNMP,snmp,
+/Split,Split,,
+/StatsD,StatsD,statsd,
+/SUSE-Linux-Enterprise-Server,SUSE Linux Enterprise Server,os,
+/Sybase,Sybase,,
+/Synthetics,Synthetics,synthetics,
+/Ubuntu,Ubuntu,os,
+/Unix,Unix,os,
+/Varnish,Varnish,varnish,
+/VictorOps,VictorOps,,
+/Windows,Windows,os,
+/Windows-event-log,Windows event log,,
+/xMatters,xMatters,,
+/Zipkin,Zipkin,,
+Android,Android,mobile,
+aws/Amazon-Athena,Amazon Athena,aws,
+aws/Amazon-DocumentDB,Amazon DocumentDB,aws,
+aws/Amazon-Linux,Amazon Linux,os,
+aws/Amazon-MSK,Amazon MSK,aws,
+aws/AWS-API-Gateway,AWS API Gateway,aws,
+aws/AWS-AppSync,AWS AppSync,aws,
+aws/AWS-Auto-Scaling,AWS Auto Scaling,aws,
+aws/AWS-Billing,AWS Billing,aws,
+aws/AWS-CloudFormation,AWS CloudFormation,aws,
+aws/AWS-CloudFront,AWS CloudFront,aws,
+aws/AWS-CloudTrail,AWS CloudTrail,aws,
+aws/AWS-Cloudwatch-plugin-for-Logs,AWS Cloudwatch plugin for Logs,aws,
+aws/AWS-Cognito,AWS Cognito,aws,
+aws/AWS-Connect,AWS Connect,aws,
+aws/AWS-Direct-Connect,AWS Direct Connect,aws,
+aws/AWS-DynamoDB,AWS DynamoDB,aws,
+aws/AWS-EBS,AWS EBS,aws,
+aws/AWS-EC2,AWS EC2,aws,
+aws/AWS-ECS-ECR,AWS ECS/ECR,aws,
+aws/AWS-EFS,AWS EFS,aws,
+aws/AWS-Elastic-Beanstalk,AWS Elastic Beanstalk,aws,
+aws/AWS-ElastiCache,AWS ElastiCache,aws,
+aws/AWS-Elasticsearch,AWS Elasticsearch,aws,
+aws/AWS-ELB,AWS ELB,aws,
+aws/AWS-Elemental-MediaPackage-VOD,AWS Elemental MediaPackage VOD,aws,
+aws/AWS-EMR,AWS EMR,aws,
+aws/AWS-FireLens-plugin-for-Logs,AWS FireLens plugin for Logs,aws,
+aws/AWS-FSx,AWS FSx,aws,
+aws/AWS-Glue,AWS Glue,aws,
+aws/AWS-Health,AWS Health,aws,
+aws/AWS-IAM,AWS IAM,aws,
+aws/AWS-IoT,AWS IoT,aws,
+aws/AWS-Kinesis-Data-Firehose,AWS Kinesis Data Firehose,aws,
+aws/AWS-Kinesis-Data-Streams,AWS Kinesis Data Streams,aws,
+aws/AWS-Lambda,AWS Lambda,aws,
+aws/AWS-MQ,AWS MQ,aws,
+aws/AWS-NeptuneDB,AWS NeptuneDB,aws,
+aws/AWS-NLB-ALB,AWS NLB/ALB,aws,
+aws/AWS-Outposts,AWS Outposts,aws,
+aws/AWS-QLDB,AWS QLDB,aws,
+aws/AWS-RDS,AWS RDS,aws,
+aws/AWS-RDS-Enhanced,AWS RDS Enhanced,aws,
+aws/AWS-Redshift,AWS Redshift,aws,
+aws/AWS-Route-53,AWS Route 53,aws,
+aws/AWS-Route53-Resolver,AWS Route53 Resolver,aws,
+aws/AWS-S3,AWS S3,aws,
+aws/AWS-SES,AWS SES,aws,
+aws/AWS-SNS,AWS SNS,aws,
+aws/AWS-SQS,AWS SQS,aws,
+aws/AWS-Step-Functions,AWS Step Functions,aws,
+aws/AWS-TransitGateway,AWS TransitGateway,aws,
+aws/AWS-Trusted-Advisor,AWS Trusted Advisor,aws,
+aws/AWS-VPC,AWS VPC,aws,
+aws/AWS-VPC-Flow-Logs,AWS VPC Flow Logs,aws,
+aws/AWS-WAF,AWS WAF,aws,
+aws/AWS-X-Ray,AWS X-Ray,aws,
+azure/Azure-API-Management,Azure API Management,azure,
+azure/Azure-App-Service,Azure App Service,azure,
+azure/Azure-Containers,Azure Containers,azure,
+azure/Azure-Cosmos-DB,Azure Cosmos DB,azure,
+azure/Azure-Cost-Management,Azure Cost Management,azure,
+azure/Azure-DataFactories,Azure DataFactories,azure,
+azure/Azure-Event-Hubs,Azure Event Hubs,azure,
+azure/Azure-Express-Route,Azure Express Route,azure,
+azure/Azure-Front-Door,Azure Front Door,azure,
+azure/Azure-Functions,Azure Functions,azure,
+azure/Azure-Load-Balancer,Azure Load Balancer,azure,
+azure/Azure-Logic-Apps,Azure Logic Apps,azure,
+azure/Azure-Machine-Learning-Services,Azure Machine Learning Services,azure,
+azure/Azure-MariaDB,Azure MariaDB,azure,
+azure/Azure-MySQL,Azure MySQL,azure,
+azure/Azure-PostgreSQL,Azure PostgreSQL,azure,
+azure/Azure-Power-BI-Dedicated-capacities,Azure Power BI Dedicated capacities,azure,
+azure/Azure-Redis-Cache,Azure Redis Cache,azure,
+azure/Azure-Service-Bus,Azure Service Bus,azure,
+azure/Azure-SQL-Database,Azure SQL Database,azure,
+azure/Azure-SQL-Managed-Instances,Azure SQL Managed Instances,azure,
+azure/Azure-Storage,Azure Storage,azure,
+azure/Azure-Virtual-Machine-Scale-Sets,Azure Virtual Machine Scale Sets,azure,
+azure/Azure-Virtual-Network,Azure Virtual Network,azure,
+azure/Azure-VMs,Azure VMs,azure,
+azure/Azure-VPN-Gateways,Azure VPN Gateways,azure,
+dotnet/ASP-DOTNET-MVC,ASP .NET MVC,dotnet,dotnet
+dotnet/ASP-DOTNET-Web-forms,ASP .NET Web forms,dotnet,dotnet
+dotnet/CSLA-DOTNET,CSLA .NET,dotnet,dotnet
+dotnet/DNN-Community,DNN Community,dotnet,dotnet
+dotnet/DNN-Evoq,DNN Evoq,dotnet,dotnet
+dotnet/dotnet,dotnet,dotnet,
+dotnet/dotnet-core,dotnet-core,dotnet,dotnet
+dotnet/dotnet-mvc-web-api,dotnet-mvc-web-api,dotnet,dotnet
+dotnet/Episerver-CMS,Episerver CMS,dotnet,dotnet
+dotnet/FubuMVC,FubuMVC,dotnet,dotnet
+dotnet/IIS,IIS,dotnet,dotnet
+dotnet/MonoRail,MonoRail,dotnet,dotnet
+dotnet/MSMQ,MSMQ,dotnet,dotnet
+dotnet/NancyFX,NancyFX,dotnet,dotnet
+dotnet/NServiceBus,NServiceBus,dotnet,dotnet
+dotnet/OpenRasta,OpenRasta,dotnet,dotnet
+dotnet/RestSharp,RestSharp,dotnet,dotnet
+dotnet/ServiceStack,ServiceStack,dotnet,dotnet
+dotnet/Silverlight,Silverlight,dotnet,dotnet
+dotnet/Springdotnet,Spring.net,dotnet,dotnet
+dotnet/Umbraco,Umbraco,dotnet,dotnet
+Drupal,Drupal,php,php
+gcp/GCP-Cloud-Run,GCP Cloud Run,gcp,
+gcp/GCP-Dataflow,GCP Dataflow,gcp,
+gcp/GCP-Dataproc,GCP Dataproc,gcp,
+gcp/GCP-Datastore,GCP Datastore,gcp,
+gcp/GCP-Dedicated-Interconnect,GCP Dedicated Interconnect,gcp,
+gcp/GCP-Firebase-Database,GCP Firebase Database,gcp,
+gcp/GCP-Firebase-Hosting,GCP Firebase Hosting,gcp,
+gcp/GCP-Firebase-Storage,GCP Firebase Storage,gcp,
+gcp/GCP-Firestore,GCP Firestore,gcp,
+gcp/GCP-Router,GCP Router,gcp,
+gcp/GCP-VPC,GCP VPC,gcp,
+gcp/Google-App-Engine,Google App Engine,gcp,
+gcp/Google-BigQuery,Google BigQuery,gcp,
+gcp/Google-Cloud-Functions,Google Cloud Functions,gcp,
+gcp/Google-Cloud-Spanner,Google Cloud Spanner,gcp,
+gcp/Google-Cloud-SQL,Google Cloud SQL,gcp,
+gcp/Google-Cloud-Storage,Google Cloud Storage,gcp,
+gcp/Google-Compute-Engine,Google Compute Engine,gcp,
+gcp/Google-Load-Balancing,Google Load Balancing,gcp,
+gcp/Google-Pub-Sub,Google Pub/Sub,gcp,
+golang/Echo,Echo,golang,golang
+golang/Gin,Gin,golang,golang
+golang/Go-Insights,Go Insights,golang,golang
+golang/Golang,Golang,golang,
+golang/HTTPRouter,HTTPRouter,golang,golang
+golang/Lambda-go,Lambda-go (aws-lambda-go),golang,golang
+golang/Logrus,Logrus,golang,golang
+golang/Logxi,Logxi,golang,golang
+golang/Micro,Micro,golang,golang
+golang/Mux,Mux,golang,golang
+golang/NATS,NATS,golang,golang
+golang/Pkg-Errors,Pkg/Errors,golang,golang
+golang/Zap,Zap,golang,golang
+iOS,iOS,mobile,mobile
+java/Adobe-CQ,Adobe CQ,java,java
+java/Akka,Akka,java,java
+java/Anorm,Anorm,java,java
+java/Apache-HTTP-client,Apache HTTP client,java,java
+java/ASyncHTTPClient,ASyncHTTPClient,java,java
+java/ColdFusion,ColdFusion,java,java
+java/CXF,CXF,java,java
+java/Derby,Derby,java,java
+java/EJB-Session-Beans,EJB Session Beans,java,java
+java/Generic-JDBC,Generic JDBC,java,java
+java/Glassfish,Glassfish,java,java
+java/Grails,Grails,java,java
+java/gRPC,gRPC,java,java
+java/H2,H2,java,java
+java/Hibernate,Hibernate,java,java
+java/HSQL,HSQL,java,java
+java/Hystrix,Hystrix,java,java
+java/IBM-DB2,IBM DB2,java,java
+java/Inet-Merlia,Inet Merlia,java,java
+java/Inet-Oracle-Driver,Inet Oracle Driver (oranxo),java,java
+java/Java,Java,java,
+java/JAX-RS,JAX-RS,java,java
+java/Jayrock,Jayrock,java,java
+java/JCache-API,JCache API,java,java
+java/Jersey,Jersey,java,java
+java/Jetty,Jetty,java,java
+java/JMS,JMS,java,java
+java/JSF,JSF,java,java
+java/JSP,JSP,java,java
+java/Mule-ESB,Mule ESB,java,java
+java/Netty,Netty,java,java
+java/OC4J,OC4J,java,java
+java/OpenTelemetry-Java-Exporter,OpenTelemetry Java Exporter,java,java
+java/Play,Play,java,java
+java/Play-WS,Play WS,java,java
+java/Quartz-Job-Scheduler,Quartz Job Scheduler,java,java
+java/Resin,Resin,java,java
+java/RESTeasy,RESTeasy,java,java
+java/Scala,Scala,java,java
+java/Slick,Slick,java,java
+java/Solr,Solr,java,java
+java/Spray-can,Spray-can,java,java
+java/Spring,Spring,java,java
+java/Spring-JMS,Spring-JMS,java,java
+java/SpyMemcached,SpyMemcached,java,java
+java/Struts,Struts,java,java
+java/Thrift,Thrift,java,java
+java/Tomcat,Tomcat,java,java
+java/TomEE,TomEE,java,java
+java/Vert-x,Vert.x,java,java
+java/WebLogic,WebLogic,java,java
+java/WebSphere,WebSphere,java,java
+java/Websphere-Liberty-Profile,Websphere Liberty Profile,java,java
+java/WildFly,WildFly,java,java
+JMX,JMX,jmx,jmx
+Kafka,Kafka,kafka,
+kubernetes/Google-Kubernetes-Engine,Google Kubernetes Engine,,
+kubernetes/Kubernetes,Kubernetes,kubernetes,
+kubernetes/Kubernetes-plugin-for-Logs,Kubernetes plugin for Logs,kubernetes,
+node-js/Express,Express,node.js,node.js
+node-js/Hapi,Hapi,node.js,node.js
+node-js/Koa,Koa,node.js,node.js
+node-js/Node-js,Node.js,node.js,
+node-js/Restify,Restify,node.js,node.js
+oracle/Oracle,Oracle,oracle,
+pagerduty/Pagerduty,Pagerduty,,
+php/CakePHP,CakePHP,php,php
+php/CodeIgniter,CodeIgniter,php,php
+php/Guzzle,Guzzle,php,php
+php/Joomla,Joomla,php,php
+php/Kohana,Kohana,php,php
+php/Laravel,Laravel,php,php
+php/Magento,Magento,php,php
+php/MediaWiki,MediaWiki,php,php
+php/ODBC,ODBC,php,php
+php/PDO,PDO,php,php
+php/PHP,PHP,php,
+php/PHPunit,PHPunit,php,php
+php/Predis,Predis,php,php
+php/Slim,Slim,php,php
+php/SQLite,SQLite,php,php
+php/Symfony,Symfony,php,php
+php/Yii,Yii,php,php
+python/AIOHTTP,AIOHTTP,python,python
+python/AMQPlib,AMQPlib,python,python
+python/bottle,bottle,python,python
+python/celery,celery,python,python
+python/cherrypy,cherrypy,python,python
+python/CloudAMQP,CloudAMQP,python,python
+python/django,django,python,python
+python/dropbox,dropbox,python,python
+python/facepy,facepy,python,python
+python/Falcon,Falcon,python,python
+python/feedparser,feedparser,python,python
+python/flask,flask,python,python
+python/Gearman,Gearman,python,python
+python/gevent,gevent,python,python
+python/httplib2,httplib2,python,python
+python/jinja2,jinja2,python,python
+python/mako,mako,python,python
+python/OurSQL,OurSQL,python,python
+python/Pika,Pika,python,python
+python/piston,piston,python,python
+python/Proboscis,Proboscis,python,python
+python/Psycopg2,Psycopg2,python,python
+python/PyElasticSearch,PyElasticSearch,python,python
+python/pylibmc,pylibmc,python,python
+python/pylons,pylons,python,python
+python/PyMongo,PyMongo,python,python
+python/pyramid,pyramid,python,python
+python/PySQLite,PySQLite,python,python
+python/Python,Python,python,
+python/pywapi,pywapi,python,python
+python/Sanic,Sanic,python,python
+python/Silex,Silex,python,python
+python/tastypie,tastypie,python,python
+python/tornado,tornado,python,python
+python/twisted,twisted,python,python
+python/urllib,urllib,python,python
+python/urllib2,urllib2,python,python
+python/urllib3,urllib3,python,python
+python/web2py,web2py,python,python
+python/webpy,webpy,python,python
+React-Native,React Native,mobile,
+redhat/Red-Hat-Enterprise-Linux,Red Hat Enterprise Linux,os,
+redhat/Red-Hat-OpenShift,Red Hat OpenShift,,
+ruby/ActiveRecord,ActiveRecord,ruby,ruby
+ruby/Acts-as-solr,Acts_as_solr,ruby,ruby
+ruby/Authlogic,Authlogic,ruby,ruby
+ruby/Bunny,Bunny,ruby,ruby
+ruby/Curb,Curb,ruby,ruby
+ruby/Dalli,Dalli,ruby,ruby
+ruby/Delayed-Job,Delayed_Job,ruby,ruby
+ruby/Excon,Excon,ruby,ruby
+ruby/Grape,Grape,ruby,ruby
+ruby/HttpClient,HttpClient,ruby,ruby
+ruby/HttpRb,HttpRb,ruby,ruby
+ruby/Net-HTTP,Net::HTTP,ruby,ruby
+ruby/Padrino,Padrino,ruby,ruby
+ruby/Passenger,Passenger,ruby,ruby
+ruby/Puma,Puma,ruby,ruby
+ruby/Rack,Rack,ruby,ruby
+ruby/Rails,Rails,ruby,ruby
+ruby/Rainbows,Rainbows!,ruby,ruby
+ruby/Rake,Rake,ruby,ruby
+ruby/Resque,Resque,ruby,ruby
+ruby/Ruby,Ruby,ruby,
+ruby/Sequel,Sequel,ruby,ruby
+ruby/Sidekiq,Sidekiq,ruby,ruby
+ruby/Sinatra,Sinatra,ruby,ruby
+ruby/Sunspot,Sunspot,ruby,ruby
+ruby/Thin,Thin,ruby,ruby
+ruby/Typhoeus,Typhoeus,ruby,ruby
+ruby/Unicorn,Unicorn,ruby,ruby
+ruby/Webrick,Webrick,ruby,ruby
+tvOS,tvOS,mobile,
+vmware/VMware-ESXi,VMware ESXi,esxi,
+vmware/VMWare-Tanzu,VMWare Tanzu,tanzu,
+WordPress,WordPress,php,php

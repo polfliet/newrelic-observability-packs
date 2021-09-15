@@ -83,7 +83,7 @@ def dumpToYaml(path, pack_install_key):
             # Replace placeholders
             summary = summary.replace('<QUICKSTART_NAME>', documents['title'])
             description = description.replace('<QUICKSTART_NAME>', documents['title'])
-            description = description.replace('<QUICKSTART_SUMMARY>', documents['summary'])
+            description = description.replace('<ORIGINAL_QUICKSTART_SUMMARY>', documents['summary'])
         
             documents['summary'] = summary
             documents['description'] = description      

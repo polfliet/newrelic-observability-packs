@@ -1,11 +1,8 @@
-**What is <QUICKSTART_NAME>?**
-<QUICKSTART_SUMMARY>
+# What is <QUICKSTART_NAME>?
+<ORIGINAL_QUICKSTART_SUMMARY>
 
-**Get started!**
-[The New Relic Java agent automatically instruments](https://docs.newrelic.com/docs/agents/java-agent/getting-started/compatibility-requirements-java-agent/#auto-instrumented) <QUICKSTART_NAME>. Use this quickstart to quickly get observability for <QUICKSTART_NAME> with New Relic's Java agent. 
+## Get started!
+Leverage community expertise and instantly get value out of your telemetry data. This quickstart automatically instruments <QUICKSTART_NAME> with the New Relic Java agent, and allows you to instantly monitor your Java application with out-of-the-box dashboards and alerts. 
 
-**Application Performance Monitoring**
-To view your app's performance in the New Relic UI, go to one.newrelic.com > APM > (select an app) > Summary. The APM user interface includes a dedicated JVM metrics page, transaction and error details, a thread profiler tool to sample Java threads and report stack traces, and more.
-
-**More info**
+## More info
 Check out the [documentation](https://docs.newrelic.com/docs/agents/java-agent/getting-started/introduction-new-relic-java/) to learn more about New Relic monitoring for <QUICKSTART_NAME>.

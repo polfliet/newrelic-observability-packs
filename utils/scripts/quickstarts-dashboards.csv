@@ -271,11 +271,11 @@ Kafka,Kafka,kafka,
 kubernetes/Google-Kubernetes-Engine,Google Kubernetes Engine,,
 kubernetes/Kubernetes,Kubernetes,kubernetes,
 kubernetes/Kubernetes-plugin-for-Logs,Kubernetes plugin for Logs,kubernetes,
-node-js/Express,Express,node.js,node.js
-node-js/Hapi,Hapi,node.js,node.js
-node-js/Koa,Koa,node.js,node.js
+node-js/Express,Express,node.js,node-js
+node-js/Hapi,Hapi,node.js,node-js
+node-js/Koa,Koa,node.js,node-js
 node-js/Node-js,Node.js,node.js,
-node-js/Restify,Restify,node.js,node.js
+node-js/Restify,Restify,node.js,node-js
 oracle/Oracle,Oracle,oracle,
 pagerduty/Pagerduty,Pagerduty,,
 php/CakePHP,CakePHP,php,php

@@ -24,19 +24,33 @@ for (dirpath, dirnames, filenames) in os.walk(dirName):
         
 # Print the files   
 templates = ['dotnet', 'ruby', 'python', 'java', 'golang', 'node.js', 'php', 'aws', 'azure', 'gcp', 'c', 'c++'] 
-writer.writerow(['NAME', 'PATH', 'KEYWORDS', 'TEMPLATE'])
+writer.writerow(['NAME', 'PATH', 'KEYWORDS', 'INSTALL_PLAN', 'TEMPLATE'])
 for elem in listOfFiles:
     if len(elem['files']) > 1 and 'config.yml' in elem['files']:
         print('Quickstart found at ' + elem['dir'])
         with open(elem['dir'] + '/config.yml', 'r+') as qsfile:
             qs = yaml.load(qsfile)
+            row = [qs['name'], elem['dir']]
+            
+            templateNeeded = 'YES'
             if 'keywords' in qs:
+                row += [qs['keywords']]
                 if any(item in qs['keywords'] for item in templates):
-                    writer.writerow([qs['name'], elem['dir'], qs['keywords'], 'NO'])
+                    templateNeeded = 'NO'
                 else:
-                    writer.writerow([qs['name'], elem['dir'], qs['keywords'], 'YES'])
+                    templateNeeded = 'YES'
             else:
-                writer.writerow([qs['name'], elem['dir'], '', 'YES'])
+                row += ['']
+
+            if 'installPlans' in qs:
+                row += [qs['installPlans']]
+            else:
+                row += ['']
+                if templateNeeded != 'NO':
+                    templateNeeded = 'NO_INSTALL_PLAN'
+
+            row += [templateNeeded]
+            writer.writerow(row)
         qsfile.close()
 
 f.close()

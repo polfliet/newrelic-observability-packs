@@ -1,3 +1,48 @@
+## [0.21.1](https://github.com/newrelic/newrelic-observability-packs/compare/v0.21.0...v0.21.1) (2021-09-16)
+
+
+### Bug Fixes
+
+* capitalization fixes ([938d196](https://github.com/newrelic/newrelic-observability-packs/commit/938d196cfd4e4da86c2a613e63e8e76a6fce1d83))
+* final copyedits ([4c7d7e2](https://github.com/newrelic/newrelic-observability-packs/commit/4c7d7e204556d1230b4a5a61672706abd729ebb8))
+* Remove "kit" ([f86f7fb](https://github.com/newrelic/newrelic-observability-packs/commit/f86f7fbbcc5b75aba30ee5aff7c817aa2b590eb3))
+
+# [0.21.0](https://github.com/newrelic/newrelic-observability-packs/compare/v0.20.1...v0.21.0) (2021-09-16)
+
+
+### Features
+
+* Add dashboards and alerts for node.js ([70a11ab](https://github.com/newrelic/newrelic-observability-packs/commit/70a11ab31932691d7b65226cb761f1a9e0622a91))
+* Add dashboards and alerts for python related quickstarts ([c5f3cbf](https://github.com/newrelic/newrelic-observability-packs/commit/c5f3cbf3ed14a5eae3b04a05615de1eae22462e7))
+
+## [0.20.1](https://github.com/newrelic/newrelic-observability-packs/compare/v0.20.0...v0.20.1) (2021-09-16)
+
+
+### Bug Fixes
+
+* **nginx:** removed mentions of cassandra ([ca533c9](https://github.com/newrelic/newrelic-observability-packs/commit/ca533c99a759c338fbdec39583863f51a938675b))
+
+# [0.20.0](https://github.com/newrelic/newrelic-observability-packs/compare/v0.19.0...v0.20.0) (2021-09-16)
+
+
+### Features
+
+* Add dashboards and alerts for .NET quickstarts ([a389fd4](https://github.com/newrelic/newrelic-observability-packs/commit/a389fd4d2e0accf7c146e89b6e91d8b1487b175e))
+
+# [0.19.0](https://github.com/newrelic/newrelic-observability-packs/compare/v0.18.1...v0.19.0) (2021-09-16)
+
+
+### Bug Fixes
+
+* Fix alerts for adobe-cq ([23962c1](https://github.com/newrelic/newrelic-observability-packs/commit/23962c15a9194e6bc3bc48ae5668adfbd60d5734))
+* fix alerts for java related quickstarts ([b2ed5c7](https://github.com/newrelic/newrelic-observability-packs/commit/b2ed5c7e0e0ae0963bc19ec1253cf091445a9eef))
+* fix java error thresholds ([41622c9](https://github.com/newrelic/newrelic-observability-packs/commit/41622c96cce388721bd6e4f1e34f71c8c562ce98))
+
+
+### Features
+
+* Add dashboards, alerts, descriptions for Java related quickstarts ([1a7a4ad](https://github.com/newrelic/newrelic-observability-packs/commit/1a7a4ad71234c404f98624049fbea0ea8e753307))
+
 ## [0.18.1](https://github.com/newrelic/newrelic-observability-packs/compare/v0.18.0...v0.18.1) (2021-09-15)
 
 

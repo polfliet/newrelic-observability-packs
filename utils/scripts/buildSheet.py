@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import csv
 import pandas
 from ruamel.yaml import YAML
@@ -12,88 +14,41 @@ import shutil
 yaml = YAML()
 yaml.width = 4096
 f = open('quickstart-dump.csv', 'w')
-# create the csv writer
 writer = csv.writer(f)
 
-# Get a list of files in a directory
-dirName = '../../packs/'
-listOfFiles = list()
-for (dirpath, dirnames, filenames) in os.walk(dirName):
-    #listOfFiles += [os.path.join(dirpath, file) for file in filenames]
-    listOfFiles.append({'dir': dirpath, 'files': filenames})
-        
-# Print the files   
-templates = ['dotnet', 'ruby', 'python', 'java', 'golang', 'node.js', 'php', 'aws', 'azure', 'gcp', 'c', 'c++'] 
-writer.writerow(['NAME', 'PATH', 'KEYWORDS', 'INSTALL_PLAN', 'TEMPLATE'])
-for elem in listOfFiles:
-    if len(elem['files']) > 1 and 'config.yml' in elem['files']:
-        print('Quickstart found at ' + elem['dir'])
-        with open(elem['dir'] + '/config.yml', 'r+') as qsfile:
-            qs = yaml.load(qsfile)
-            row = [qs['name'], elem['dir']]
-            
-            templateNeeded = 'YES'
-            if 'keywords' in qs:
-                row += [qs['keywords']]
-                if any(item in qs['keywords'] for item in templates):
-                    templateNeeded = 'NO'
-                else:
-                    templateNeeded = 'YES'
-            else:
-                row += ['']
+def isPack(directory):
+    return os.path.exists(directory + "/" + "config.yml")
 
-            if 'installPlans' in qs:
-                row += [qs['installPlans']]
-            else:
-                row += ['']
-                if templateNeeded != 'NO':
-                    templateNeeded = 'NO_INSTALL_PLAN'
+def hasDashboardOrAlerts(directory):
+    dashboards = os.path.exists(directory + "/dashboards") and len(os.listdir(directory + "/dashboards")) > 0
+    alerts = os.path.exists(directory + "/alerts") and len(os.listdir(directory + "/alerts")) > 0
+    return dashboards or alerts
 
-            row += [templateNeeded]
-            writer.writerow(row)
-        qsfile.close()
+def hasInstallPlan(directory):
+    with open(directory + "/" + "config.yml") as f:
+        config = yaml.load(f, Loader=SafeLoader)
+        if 'installPlans' in config and len(config['installPlans']) > 0:
+            return True
+
+def getPackConfig(directory):
+    with open(directory + "/" + "config.yml") as configFile:
+        config = yaml.load(configFile)
+        return config
+
+writer.writerow(['NAME', 'PATH', 'KEYWORDS', 'LEVEL', 'AUTHORS'])
+
+def findPack(directory):
+    packsRoot = os.listdir(directory)
+    for pack in packsRoot:
+        if isPack(directory + pack):
+            config = getPackConfig(directory + pack)
+            keywords = []
+            if 'keywords' in config:
+                keywords = config['keywords']
+            writer.writerow([pack, directory + pack, keywords, config['level'] , config['authors']])
+        else:
+            findPack(directory + pack + "/")
+
+findPack("../../packs/")
 
 f.close()
-# # Reading whole csv file with panda library.
-# yaml = YAML()
-# yaml.width = 4096
-# df = pandas.read_csv('quickstarts-dashboards.csv', sep=',')
-
-# def copyDashboardsAndAlerts(path, pack_copy_from):
-#     # Copy dashboards if it does not exist yet
-#     if not os.path.exists(path + '/dashboards'):
-#         src = "../../packs/" + pack_copy_from + "/" + pack_copy_from + "/dashboards/"
-#         if os.path.exists(src):
-#             shutil.copytree(src, path + '/dashboards/') # APM packs are currently always in name/name
-#         else:
-#             print(f'Dashboards for {pack_copy_from} not found')
-        
-#     # Copy alerts if it does not exist yet
-#     if not os.path.exists(path + '/alerts'):
-#         src = "../../packs/" + pack_copy_from + "/" + pack_copy_from + "/alerts/"
-#         if os.path.exists(src):
-#             shutil.copytree(src, path + '/alerts/') # APM packs are currently always in name/name
-#         else:
-#             print(f'Alerts for {pack_copy_from} not found')
-
-# def isNaN(string):
-#     return string != string
-
-# for index, row in df.iterrows(): # Iterates the csv file.
-#     print('**** Pack ****')
-#     pack_path = str.lower(row['PATH']).replace(' ', '-') # Path of the pack
-#     pack_name = row['NAME'] # Name of the pack
-#     pack_copy_from = row['DASHBOARD_COPY'] # Where to copy dashboards & alerts from
-
-#     if not isNaN(pack_copy_from):
-#         # Find the pack
-#         print(f'Path: {pack_path}')
-#         path = f'../../packs/{pack_path}'
-        
-#         if os.path.exists(path): # Check if the pack exists
-#             print(f'Pack {pack_name} was found, updating...')
-#             copyDashboardsAndAlerts(path, pack_copy_from)        
-#         else:
-#             print(f'Pack {pack_name} was not found at {path}')
-
-#         print('\n')

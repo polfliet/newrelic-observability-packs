@@ -16,13 +16,19 @@ df = pandas.read_csv('quickstarts-descriptions.csv', sep=',')
 
 description_map = {
     #"<TECHNOLOGY>": ["<SUMMARY>", "DESCRIPTION"],
-    "dotnet": [],
-    "ruby": [],
-    "python": [],
-    "java": [
-        "Monitor <QUICKSTART_NAME> with New Relic's Java agent",
-        "java.md"
+    "dotnet": [
+        "Monitor <QUICKSTART_NAME> with New Relic's .NET agent",
+        "dotnet.md"
     ],
+    "ruby": [
+        "Monitor <QUICKSTART_NAME> with New Relic's Ruby agent",
+        "ruby.md"
+    ],
+    "python": [
+        "Monitor <QUICKSTART_NAME> with New Relic's Python agent",
+        "python.md"
+    ],
+    "java": [], # Do manual update
     "aws": [],
     "os": [],
     "mobile": [],
@@ -30,15 +36,30 @@ description_map = {
     "zookeeper": [],
     "azure": [],
     "browser": [],
-    "c": [],
-    "c++": [],
-    "php": [],
+    "c": [
+        "Monitor <QUICKSTART_NAME> with New Relic's C agent",
+        "c.md"
+    ],
+    "c++": [
+        "Monitor <QUICKSTART_NAME> with New Relic's C agent",
+        "c.md"
+    ],
+    "php": [
+        "Monitor <QUICKSTART_NAME> with New Relic's PHP agent",
+        "php.md"
+    ],
     "cassandra": [],
     "couchbase": [],
     "docker": [],
-    "golang": [],
+    "golang": [
+        "Monitor <QUICKSTART_NAME> with New Relic's Golang agent",
+        "golang.md"
+    ],
     "elasticsearch": [],
-    "node.js": [],
+    "node.js": [
+        "Monitor <QUICKSTART_NAME> with New Relic's Node.js agent",
+        "node-js.md"
+    ],
     "f5": [],
     "gcp": [],
     "haproxy": [],

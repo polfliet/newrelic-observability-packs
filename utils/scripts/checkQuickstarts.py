@@ -20,14 +20,17 @@ def hasInstallPlan(directory):
 
     return False
 
-def getInstallPlans(directory):
-    #installPlan types: targetedInstall, nerdlet, link
+def checkInstallPlanIsDoc(directory):
+    # installPlan types: targetedInstall, nerdlet, link
+    # Check if it is proper install plan or a docs link
     with open(directory + "/" + "config.yml") as f:
         config = yaml.load(f, Loader=SafeLoader)
         if 'installPlans' in config and len(config['installPlans']) > 0:
-            return config['installPlans']
+            for plan in config['installPlans']:
+                if 'docs' in plan or 'third-party' in plan:
+                    return True
 
-    return []
+    return False
 
 def listToString(s): 
     str = "" 
@@ -36,43 +39,57 @@ def listToString(s):
     return str 
 
 countTotal = 0
-countDyesIno = 0
-countDyesIyes = 0
-countDnoIno = 0
-countDnoIyes = 0
+countDashboardYesPlanNo = 0
+countDashboardYesPlanYes = 0
+countDashboardYesPlanYesOnlyDoc = 0
+countDashboardNoPlanNo = 0
+countDashboardNoPlanYes = 0
+countDashboardNoPlanYesOnlyDoc = 0
 
 def checkDir(directory):
     global countTotal
-    global countDyesIno
-    global countDyesIyes
-    global countDnoIno
-    global countDnoIyes
+    global countDashboardYesPlanNo
+    global countDashboardYesPlanYes
+    global countDashboardYesPlanYesOnlyDoc
+    global countDashboardNoPlanNo
+    global countDashboardNoPlanYes
+    global countDashboardNoPlanYesOnlyDoc
     packsRoot = os.listdir(directory)
     for pack in packsRoot:
         if isPack(directory + pack):
             countTotal += 1
             if hasDashboardOrAlerts(directory + pack):
                 if not hasInstallPlan(directory + pack):
-                    countDyesIno += 1
+                    countDashboardYesPlanNo += 1
                     print(pack + ": DASHB YES INSTALL NO")
                 else:
-                    countDyesIyes += 1                   
-                    print(pack + ": DASHB YES INSTALL YES " + listToString(getInstallPlans(directory + pack)))
+                    if checkInstallPlanIsDoc(directory + pack):
+                        countDashboardYesPlanYesOnlyDoc += 1
+                        print(pack + ": DASHB YES INSTALL YES DOCONLY")
+                    else:                       
+                        countDashboardYesPlanYes += 1
+                        print(pack + ": DASHB YES INSTALL YES")
             else:
                 if not hasInstallPlan(directory + pack):
-                    countDnoIno += 1
+                    countDashboardNoPlanNo += 1
                     print(pack + ": DASHB NO INSTALL NO")
                 else:
-                    countDnoIyes += 1
-                    print(pack + ": DASHB NO INSTALL YES " + listToString(getInstallPlans(directory + pack)))
+                    if checkInstallPlanIsDoc(directory + pack):
+                        countDashboardNoPlanYesOnlyDoc += 1
+                        print(pack + ": DASHB NO INSTALL YES DOCONLY")
+                    else:
+                        countDashboardNoPlanYes += 1
+                        print(pack + ": DASHB NO INSTALL YES")
         else:
             checkDir(directory + pack + "/")
 
-checkDir("../../packs/")
+checkDir("../../quickstarts/")
 
 print("**** RESULTS *****")
 print("Total quickstarts: " + str(countTotal))
-print("Dashboard/alerts YES, Install Plan NO: " + str(countDyesIno))
-print("Dashboard/alerts YES, Install Plan YES: " + str(countDyesIyes))
-print("Dashboard/alerts NO, Install Plan NO: " + str(countDnoIno))
-print("Dashboard/alerts NO, Install Plan YES: " + str(countDnoIyes))
+print("Dashboard/alerts YES, Install Plan NO: " + str(countDashboardYesPlanNo))
+print("Dashboard/alerts YES, Install Plan YES: " + str(countDashboardYesPlanYes))
+print("Dashboard/alerts YES, Install Plan YES, Doc ONLY: " + str(countDashboardYesPlanYesOnlyDoc))
+print("Dashboard/alerts NO, Install Plan NO: " + str(countDashboardNoPlanNo))
+print("Dashboard/alerts NO, Install Plan YES: " + str(countDashboardNoPlanYes))
+print("Dashboard/alerts NO, Install Plan YES, Doc ONLY: " + str(countDashboardNoPlanYesOnlyDoc))

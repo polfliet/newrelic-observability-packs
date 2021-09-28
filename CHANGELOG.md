@@ -1,3 +1,49 @@
+## [0.35.1](https://github.com/newrelic/newrelic-quickstarts/compare/v0.35.0...v0.35.1) (2021-09-27)
+
+
+### Bug Fixes
+
+* build importer and update readme ([251a2a6](https://github.com/newrelic/newrelic-quickstarts/commit/251a2a67b7d9c10b6111f0e659399f74534d01a1))
+
+# [0.35.0](https://github.com/newrelic/newrelic-quickstarts/compare/v0.34.1...v0.35.0) (2021-09-27)
+
+
+### Features
+
+* added install plan for ibmmq ([40fa216](https://github.com/newrelic/newrelic-quickstarts/commit/40fa2166351e3d628ca319ebbe5791bfa3cf44e1))
+* added install plan for silex ([0a07dd6](https://github.com/newrelic/newrelic-quickstarts/commit/0a07dd6980c3073e03c1e59e29ad8f8a4e22727a))
+* added network flow docs installation plan ([b392d0f](https://github.com/newrelic/newrelic-quickstarts/commit/b392d0f0c571343dc6f4373dfb47c802107f9ab5))
+
+## [0.34.1](https://github.com/newrelic/newrelic-quickstarts/compare/v0.34.0...v0.34.1) (2021-09-27)
+
+
+### Bug Fixes
+
+* move EJB to java directory ([a578cd0](https://github.com/newrelic/newrelic-quickstarts/commit/a578cd0480bf7002db5d04b00ba431277db19f28))
+
+# [0.34.0](https://github.com/newrelic/newrelic-quickstarts/compare/v0.33.0...v0.34.0) (2021-09-27)
+
+
+### Features
+
+* Add featured keyword to partner quickstarts ([1490a00](https://github.com/newrelic/newrelic-quickstarts/commit/1490a00de840e8de875b24f8a6b467f041421957))
+* Add featured to Fastly ([f2917f4](https://github.com/newrelic/newrelic-quickstarts/commit/f2917f42537ae3453d29576bd83c929668661b6b))
+
+# [0.33.0](https://github.com/newrelic/newrelic-quickstarts/compare/v0.32.1...v0.33.0) (2021-09-27)
+
+
+### Features
+
+* add documentation data source to gatsby build ([9528a2e](https://github.com/newrelic/newrelic-quickstarts/commit/9528a2e1628aecb320c803dd369878b1447e590a))
+
+## [0.32.1](https://github.com/newrelic/newrelic-quickstarts/compare/v0.32.0...v0.32.1) (2021-09-24)
+
+
+### Bug Fixes
+
+* incorrect description for mac Os ([7858a80](https://github.com/newrelic/newrelic-quickstarts/commit/7858a8048b0e7ae95c7ec06bfe3dca7c3d1e952b))
+* **kubernetes:** add pixie to keywords ([462a891](https://github.com/newrelic/newrelic-quickstarts/commit/462a8915aecbbd26347bb47e7b8a8d4943ba104a))
+
 # [0.32.0](https://github.com/newrelic/newrelic-quickstarts/compare/v0.31.2...v0.32.0) (2021-09-24)
 
 

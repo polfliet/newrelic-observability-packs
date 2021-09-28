@@ -29,12 +29,18 @@ description_map = {
         "python.md"
     ],
     "java": [], # Do manual update
-    "aws": [],
+    "aws": [
+        "Monitor <QUICKSTART_NAME> by connecting AWS to New Relic",
+        "aws.md"
+    ],
     "os": [],
     "mobile": [],
     "apache": [],
     "zookeeper": [],
-    "azure": [],
+    "azure": [
+        "Monitor <QUICKSTART_NAME> by connecting Azure to New Relic",
+        "azure.md"
+    ],
     "browser": [],
     "c": [
         "Monitor <QUICKSTART_NAME> with New Relic's C agent",
@@ -61,7 +67,10 @@ description_map = {
         "node-js.md"
     ],
     "f5": [],
-    "gcp": [],
+    "gcp": [
+        "Monitor <QUICKSTART_NAME> by connecting GCP to New Relic",
+        "gcp.md"
+    ],
     "haproxy": [],
     "jmx": [],
     "kafka": [],
